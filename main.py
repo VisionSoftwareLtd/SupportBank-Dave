@@ -13,7 +13,8 @@ def isValidCommand(command) -> bool:
     return True
   if command.lower() == 'quit':
     return True
-  print('Invalid command')
+  if len(command) > 0:
+    print('Invalid command')
   return False
 
 def getCommand() -> str:
